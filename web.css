@@ -1,0 +1,236 @@
+/* Universal box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: indigo;
+}
+
+/* Topnav styling */
+.topnav .w3-bar {
+    margin-top: auto;
+    overflow: hidden;  
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+  }
+
+/* Container1 on Main Page styling */  
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f1f1f1;
+    margin: 20px;
+    margin-bottom: 225px;
+  }
+  
+/* Container2 on Main Page styling */   
+  .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: indigo;
+  }
+
+/* Responsive layout - will wrap (stack) the columns of Container2 on a smaller screen  */
+  @media screen and (max-width:800px) {
+    .container2  {
+        flex-wrap: wrap;
+    }
+}
+
+/* Container3 on Main Page styling */   
+  .container3 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: purple;
+  }
+
+/* Responsive layout - will wrap (stack) the columns of Container3 on a smaller screen  */
+  @media screen and (max-width:800px) {
+    .container3  {
+        flex-wrap: wrap;
+    }
+}
+
+/* Container4 on Main Page styling */   
+  .container4 {
+    display: flex;
+     justify-content: space-evenly;
+    background-color: #f1f1f1;
+  }
+
+/* Responsive layout - will wrap (stack) the columns of Container4 on a smaller screen  */
+  @media screen and (max-width:800px) {
+    .container4  {
+        flex-wrap: wrap;
+    }
+}
+
+/* Container5 on Main Page styling */  
+  .container5 {
+    display: flex;
+     justify-content: space-evenly;
+    background-color: purple;
+  }
+
+/* Box Class on Main Page styling */  
+  .box {
+    background-color: #f1f1f1;
+    width:50%;
+    margin: 20px;
+    text-align: center;
+    color: black;
+  }
+
+/* White Id used to colour h2's on Main Page */    
+  #white {
+      color: white;
+  }
+
+/* Purple Id used to colour Container3 image background on Main Page for when page is re-sized */    
+  #purple {
+      background-color: purple;
+  }
+
+/* Menus Class on Menu's Page styling */  
+.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    background-color: indigo;
+
+}
+
+/* Item Class on Menu's Page styling */  
+.item {
+    width:50%;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* MaoriKai Class on Maori Kai Page styling */  
+.maorikai {
+    display: block;
+    float: right;
+    max-width: 65%;
+    margin: 10px;
+    padding: 10px; 
+    text-align: left;
+}
+
+/* Links styling to remove underlining */  
+a {
+    text-decoration: none;
+}
+
+/* Kai-img Class on Maori Kai Page styling to float the image to the right of the page */  
+.kai-img {
+    float:right;
+    text-align: center;
+}
+
+/* Maori-left-align Class on Maori Kai Page styling to float the text to the left of the image */  
+.maori-left-align {
+    float: left;
+    text-align: left;
+    max-width: 50%;
+    margin: 10px;
+    padding: 10px; 
+}
+
+/* Open Hours Class text styling */
+.open {
+    text-align: center;
+}
+
+/* Address Class on Find/Contact Page styling to align the text */  
+.address {
+    text-align: center;
+}
+
+/* Headings styling to set a consistent Font type */  
+h1, h2, h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* h1 styling */  
+h1 {
+    color:white;
+    background-color: indigo;
+    text-align: center; 
+    font-size: 3em;
+}
+
+/* Responsive font size to make the h1 text smaller on a smaller screen */
+ @media screen and (max-width:600px) {
+    h1 {
+      font-size:2em;
+  }
+}
+
+/* h2 and h3 styling to set the colour */  
+h2, h3 {
+    color: mediumblue;
+}
+
+/* h2 styling */  
+h2 {
+    text-align: center; 
+    font-size: 2em;
+}
+
+/* Responsive font size to make the h2 text smaller on a smaller screen */
+@media screen and (max-width:600px) {
+    h2 {
+      font-size:1.6em;
+  }
+}
+
+/* h3 styling */  
+h3 {
+    font-size: 1.7em;
+}
+
+/* Responsive font size to make the h3 text smaller on a smaller screen */
+@media screen and (max-width:600px) {
+    h3 {
+      font-size:1.4em;
+  }
+}
+
+/* p styling */  
+p {
+    margin: 10px;
+    padding:10px;
+    font-size: 1.3em;
+}
+
+/* Responsive font size to make the p text smaller on a smaller screen */
+@media screen and (max-width:600px) {
+    p {
+      font-size:1em;
+  }
+}
+
+/* Page footer styling */  
+.footer {   
+    margin-top: auto;
+    margin-bottom: 0%;
+    background-color: black;
+    color: white;   
+    text-align: center;   
+    width: 100%;
+    padding: 10px;
+}
