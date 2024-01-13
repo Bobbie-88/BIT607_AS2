@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel= "stylesheet " href="css/my-css.css">
+
+        <title>Menu's</title>
+    </head>
+    <body>
+    <!-- Main header used across all the pages of the website -->
+    <header>
+    <div class="header"> 
+     <img src= "images/restaurantpic.jpeg" width="100%" height="60%" alt= "Picture of the Haukai Restaurant - &copy; Copyright Pātaka Kai, Rotorua. ">
+    </div>
+      <h1>The Haukai Restaurant</h1>
+    </header>
+
+  <!-- Main Navigation menu used across all the pages of the website -->
+ <div class="w3-bar w3-indigo w3-card-4 w3-padding-16">
+    <a href="/home.html" class="w3-bar-item w3-hover-yellow w3-button">Home</a>
+    <a href="/menus.html" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small">Menu's</a>
+    <a href="/maorikai.html" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small">Maori Kai</a>
+    <a href="/reservations.html" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small">Reservations</a>
+    <a href="/about.html" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small">Open Hours/About</a>
+    <a href="/findContact.html" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small">Find/Contact Us</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+ </div>
+  
+ <div id="topnav" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium">
+    <a href="/menus.html" class="w3-bar-item w3-button w3-hover-yellow w3-padding-16">Menu's</a>
+    <a href="/maorikai.html" class="w3-bar-item w3-button w3-hover-yellow w3-padding-16">Maori Kai</a>
+    <a href="/reservations.html" class="w3-bar-item w3-button w3-hover-yellow w3-padding-16">Reservations</a>
+    <a href="/about.html" class="w3-bar-item w3-button w3-hover-yellow w3-padding-16">Open Hours/About</a>
+    <a href="/findContact.html" class="w3-bar-item w3-button w3-hover-yellow w3-padding-16">Find/Contact Us</a>
+ </div>
+
+  <!--JavaScript function to change the Nav for Mobile-->
+
+  <script>
+      function myFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+
+    <!-- Here is our page's main content -->
+
+    <main>
+
+    <!-- Link to Food Menu -->    
+  <div class="menus">    
+     <div class="item">
+      <h2>Kai/Food</h2>
+      <a href="/food.html"> 
+      <img src= "images/copyrightTeAra.jpg" width="100%" height="100%" padding="5px" margin="10px" alt= "Traditional Kai dish">
+      </a>
+     </div>
+      <!-- Link to Drink Menu -->
+      <div class="item">
+      <h2>Inu/Drinks</h2>
+      <a href="/drink.html"> 
+      <img src= "images/wine.jpeg" width="100%" height="100%" padding="5px" margin="10px" alt= "Local wines from Aotearoa">
+      </a>
+     </div>
+  </div>
+    <br>
+     
+    </main>
+    <!-- Main footer used across all the pages of the website -->
+    <footer class="footer">
+      <p><span class="copyright">&copy; Copyright 2024 The Haukai Restaurant.</span></p>
+    </footer>
+  </body>
+</html>
